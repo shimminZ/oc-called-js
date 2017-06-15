@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geM-4m-jaf">
+                                <rect key="frame" x="37.5" y="427" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.78735424470000004" blue="0.369328145" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7Dn-I6-MvE"/>
+                                    <constraint firstAttribute="height" constant="40" id="cJX-WG-Avi"/>
+                                </constraints>
+                                <state key="normal" title="改变第一个p标签的背景颜色"/>
+                                <connections>
+                                    <action selector="clickFirst:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9br-tx-ldc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp6-wV-I2P">
+                                <rect key="frame" x="37.5" y="487" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.78735424470000004" blue="0.369328145" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="NtS-De-doA"/>
+                                    <constraint firstAttribute="height" constant="40" id="zb2-dv-pTx"/>
+                                </constraints>
+                                <state key="normal" title="改变第二个p标签的文字居中"/>
+                                <connections>
+                                    <action selector="clickSecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxY-xj-iTE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al1-Ac-szL">
+                                <rect key="frame" x="37.5" y="547" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.78735424470000004" blue="0.369328145" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="nAc-uX-NKX"/>
+                                    <constraint firstAttribute="height" constant="40" id="oG3-VF-xru"/>
+                                </constraints>
+                                <state key="normal" title="改变第三个p标签的高度"/>
+                                <connections>
+                                    <action selector="clickThird:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QxW-by-2BN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMi-p9-rwS">
+                                <rect key="frame" x="37.5" y="607" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.78735424470000004" blue="0.369328145" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="FT7-un-LQC"/>
+                                    <constraint firstAttribute="height" constant="40" id="zGM-2O-Kuc"/>
+                                </constraints>
+                                <state key="normal" title="还原操作"/>
+                                <connections>
+                                    <action selector="clickfourth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbY-ye-7QH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GMi-p9-rwS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GY4-7k-KNh"/>
+                            <constraint firstItem="geM-4m-jaf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jrl-CO-vQN"/>
+                            <constraint firstItem="al1-Ac-szL" firstAttribute="top" secondItem="xp6-wV-I2P" secondAttribute="bottom" constant="20" id="WE9-bH-6md"/>
+                            <constraint firstItem="al1-Ac-szL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kvV-Kd-ifj"/>
+                            <constraint firstItem="GMi-p9-rwS" firstAttribute="top" secondItem="al1-Ac-szL" secondAttribute="bottom" constant="20" id="lRo-KQ-KAK"/>
+                            <constraint firstItem="xp6-wV-I2P" firstAttribute="top" secondItem="geM-4m-jaf" secondAttribute="bottom" constant="20" id="u6b-bQ-vR5"/>
+                            <constraint firstItem="xp6-wV-I2P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vju-Dr-FgA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GMi-p9-rwS" secondAttribute="bottom" constant="20" id="xLR-bZ-gpG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
